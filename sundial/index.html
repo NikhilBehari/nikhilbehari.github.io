@@ -23,7 +23,7 @@
     <div class="container" id="header" style="text-align: center; margin: auto;">
         <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
             <h2 class="col-md-12 text-center" id="title">
-                <b>SUNDIAL</b>:SUNDIAL: 3D Satellite Understanding through Direct, Ambient, and Complex Lighting Decomposition
+                <b>SUNDIAL</b>: 3D Satellite Understanding through Direct, Ambient, and Complex Lighting Decomposition
                 <small>
                     CVPR EarthVision 2024
                 </small>
@@ -101,18 +101,38 @@
             </div>
         </div>
 
+        <br/>
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <h3>
+                <h4>
                     Abstract
-                </h3>
+                </h4>
                 <p class="text-justify">
                     3D modeling from satellite imagery is essential in areas of environmental science, urban planning, agriculture, and disaster response. However, traditional 3D modeling techniques face unique challenges in the remote sensing context, including limited multi-view baselines over extensive regions, varying direct, ambient, and complex illumination conditions, and time-varying scene changes across captures. In this work, we introduce SUNDIAL, a comprehensive approach to 3D reconstruction of satellite imagery using neural radiance fields. We jointly learn satellite scene geometry, illumination components, and sun direction in this single-model approach, and propose a secondary shadow ray casting technique to 1) improve scene geometry using oblique sun angles to render shadows, 2) enable physically-based disentanglement of scene albedo and illumination, and 3) determine the components of illumination from direct, ambient (sky), and complex sources. To achieve this, we incorporate lighting cues and geometric priors from remote sensing literature in a neural rendering approach, modeling physical properties of satellite scenes such as shadows, scattered sky illumination, and complex illumination and shading of vegetation and water. We evaluate the performance of SUNDIAL against existing NeRF-based techniques for satellite scene modeling and demonstrate improved scene and lighting disentanglement, novel view and lighting rendering, and geometry and sun direction estimation on challenging scenes with small baselines, sparse inputs, and variable illumination.                </p>
             </div>
         </div>
-        
+
+        <br/><div class="row"><div class="col-md-10 col-md-offset-1"><h4>
+            Casting
+        </h4></div></div>
         <div class="row">
             <div class="col-md-10 col-md-offset-1 text-center">
+                
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <img src="./img/canopy_casting.png" width="100%">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <br/><div class="row"><div class="col-md-10 col-md-offset-1"><h4>
+            Results
+        </h4></div></div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                
                 <ul class="nav nav-pills nav-justified">
                     <li>
                         <img src="./img/canopy-comp.png" width="100%">
@@ -120,6 +140,8 @@
                 </ul>
             </div>
         </div>
+
+
 
 
 
