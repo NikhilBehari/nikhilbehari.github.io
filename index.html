@@ -19,6 +19,10 @@
   <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>"> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,500' rel='stylesheet'>
   <style>
+  a{
+    text-decoration:none
+  }
+
   body{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -36,6 +40,11 @@
     font-size: 22px;
     font-weight:500;
   }
+
+  papertitle {
+    text-decoration:underline
+  }
+
   </style>
 
 </head>
@@ -57,8 +66,8 @@
                   </p>
                   <p>
                    I am a graduate student in the <a style="text-decoration:none" href="https://www.media.mit.edu/groups/camera-culture/overview/">Camera Culture</a> group at the MIT Media Lab, advised by Professor Ramesh Raskar.  
-                   My research focuses on 3D scene representation, reinforcement learning for imaging, and optimization for decision-making under uncertainty, especially for human and planetary health.
-                   I am fortunate to be supported by the <a style="text-decoration:none" href="https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro-2024/">NASA Space Technology Graduate Research</a> Fellowship. 
+                   My research interests include 3D scene representation, reinforcement learning for imaging, and optimization for decision-making under uncertainty, especially for human and planetary health.
+                   My research is supported by the <a style="text-decoration:none" href="https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro-2024/">NASA Space Technology Graduate Research</a> Fellowship. 
                   <p>
                   I received my B.A. in Computer Science and Statistics from Harvard College in 2022. During my undergrad, I interned at NASA with Dr. Corey Ippolito, and 
                   at the CMU <a style="text-decoration:none" href="https://www.figlab.com">Future Interfaces Group</a> with Prof. Chris Harrison. More recently, I was a Research Fellow at the Harvard
@@ -87,7 +96,49 @@
             <tbody>
 
               <table>
-                <!-- SUNDIAL -->
+                <!-- DLM -->
+                <tr>
+                  <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/dlm.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                    </div>
+                  </td>
+                  <td style="padding:0px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2402.14807">
+                      <papertitle>A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health</papertitle>
+                    </a>
+                    <br>
+                    <strong>Nikhil Behari</strong>, Edwin Zhang, Yunfan Zhao, Aparna Taneja, Dheeraj Nagaraj, Milind Tambe
+                    <br>
+                    <em>Under review</em>, 2024
+                    <br>
+                    <a href="https://arxiv.org/abs/2402.14807">paper</a>
+                  </td>
+                </tr>
+
+
+                <!-- Gen Design -->
+                <tr>
+                  <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/cambrian.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                    </div>
+                  </td>
+                  <td style="padding:0px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2402.14807">
+                      <papertitle>A Roadmap for Generative Design of Visual Intelligence</papertitle>
+                    </a>
+                    <br>
+                    Kushagra Tiwary, Tzofi Klinghoffer*, Aaron Young*, Siddharth Somasundaram, <strong>Nikhil Behari</strong>, Akshat Dave, Brian Cheung, Dan-Eric Nilsson, Tomaso Poggio, Ramesh Raskar
+                    <br>
+                    <em>MIT Press (upcoming)</em>, 2024
+                    <br>
+                    <!-- <a>paper coming soon</a> -->
+                  </td>
+                </tr>
+
+
+                <!-- PreFermab -->
                 <tr>
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
@@ -153,7 +204,7 @@
                 <tr>
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
-                      <img src='images/rhinos.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/rhinos.jpg' width="120" height="120" style="border-style: none; object-fit: contain;">
                     </div>
                   </td>
                   <td style="padding:0px;width:75%;vertical-align:middle">
@@ -243,7 +294,7 @@
                 <tr>
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
-                      <img src='images/micronutrient.png' width="120" height="120"
+                      <img src='images/micronutrient.jpg' width="120" height="120"
                         style="border-style: none; object-fit: contain;">
                     </div>
                   </td>
@@ -266,7 +317,7 @@
                 <tr>
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
-                      <img src='images/demand.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/demand.jpg' width="120" height="120" style="border-style: none; object-fit: contain;">
                     </div>
                   </td>
                   <td style="padding:0px;width:75%;vertical-align:middle">
@@ -356,7 +407,7 @@
                 <tr bgcolor="">
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
-                      <img src='images/travel_time_mapping.png' width="120" height="120" style="border-style: none">
+                      <img src='images/travel_time_mapping.jpg' width="120" height="120" style="border-style: none">
                     </div>
                   </td>
                   <td style="padding:0px;width:75%;vertical-align:middle">
@@ -378,7 +429,7 @@
                 <tr bgcolor="">
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
-                      <img src='images/market_detection.png' width="120" height="120" style="border-style: none">
+                      <img src='images/market_detection.jpg' width="120" height="120" style="border-style: none">
                     </div>
                   </td>
                   <td style="padding:0px;width:75%;vertical-align:middle">
@@ -401,7 +452,7 @@
                 <tr>
                   <td style="padding:10px;width:25%;vertical-align:middle">
                     <div class="one">
-                      <img src='images/insider.png' width="120" height="120" style="border-style: none">
+                      <img src='images/insider.jpg' width="120" height="120" style="border-style: none">
                     </div>
                   </td>
                   <td style="padding:0px;width:75%;vertical-align:middle">
