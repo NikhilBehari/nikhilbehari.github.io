@@ -1,14 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<style>
-  @media screen and (max-width: 660px) {
-    .image-cell {
-      display: none;
-    }
-  }
-</style>
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -16,105 +8,72 @@
 
   <meta name="author" content="Nikhil Behari">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>"> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,500' rel='stylesheet'>
-  <style>
-
-  a,a:visited {
-    color: #0067e4;
-  }
-
-  a{
-    text-decoration:none;
-  }
-
-  body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight:300;
-  }
-
-  strong{
-    background-color:#d0f5c9; /* Background color for highlighting */
-    font-family: 'Open Sans', sans-serif; /* Specify your highlighting font here */
-    font-weight:500;
-  }
-
-  name{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    font-weight:500;
-  }
-
-  papertitle {
-    text-decoration:underline
-  }
-
-  </style>
+  <link href='stylesheet.css' rel='stylesheet'>
 
 </head>
 
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="wrapper">
     <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+      <tr>
+        <td style="padding:0">
           <!-- BIO TABLE -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="section-table">
             <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:65%;vertical-align:middle">
+              <tr>
+                <td class="bio-cell">
                   <p style="text-align:left">
                     <name>Nikhil Behari</name>
                   </p>
                   <p>
-                    I'm a graduate student in the <a style="text-decoration:none" href="https://www.media.mit.edu/groups/camera-culture/overview/">Camera Culture</a> group at the MIT Media Lab, advised by Professor <a href="https://www.media.mit.edu/people/raskar/overview/" style="text-decoration: none"> Ramesh Raskar</a>.  
-                    My research interests include computational imaging, 3D scene understanding, and multi-agent decision-making under uncertainty, with a focus on automating imaging system design for 3D perception in human and planetary health.                   
-                    My research is supported by the <a style="text-decoration:none" href="https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro-2024/">NASA Space Technology Graduate Research</a> Fellowship, under which I am advised by Dr. Corey Ippolito. 
+                    I'm a graduate student in the <a href="https://www.media.mit.edu/groups/camera-culture/overview/">Camera Culture</a> group at the MIT Media Lab, advised by Professor <a href="https://www.media.mit.edu/people/raskar/overview/"> Ramesh Raskar</a>.
+                    My research interests include computational imaging, 3D scene understanding, and multi-agent decision-making under uncertainty, with a focus on automating imaging system design for 3D perception in human and planetary health.
+                    My research is supported by the <a href="https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro-2024/">NASA Space Technology Graduate Research</a> Fellowship, under which I am advised by Dr. Corey Ippolito.
                   <p>
-                  I received my B.A. in Computer Science and Statistics from Harvard University in 2022. During my undergrad, I interned at the CMU <a style="text-decoration:none" href="https://www.figlab.com">Future Interfaces Group</a> with Prof. Chris Harrison, and more recently I was a Research Fellow at the Harvard
-                  <a style="text-decoration:none" href="https://crcs.seas.harvard.edu">Center for Research on Computation and Society</a> advised by Prof. Milind Tambe.
+                  I received my B.A. in Computer Science and Statistics from Harvard University in 2022. During my undergrad, I was a Research Fellow at the Harvard
+                  <a href="https://crcs.seas.harvard.edu">Center for Research on Computation and Society</a> advised by Prof. Milind Tambe.
 
-                  I am also a <a style="text-decoration:none" href="https://mather.harvard.edu/nrts">Non-Resident Tutor</a> for Harvard's Mather House, where I lead the Higher Education advising team. 
+                  I am also a <a href="https://mather.harvard.edu/nrts">Non-Resident Tutor</a> for Harvard's Mather House, where I lead the Higher Education advising team.
                   </p>
                   <p style="text-align:center">
-                    <a style="text-decoration:none" href="mailto:nikhilbehari@gmail.com">Email</a> &nbsp/&nbsp
-                    <a style="text-decoration:none" href="https://scholar.google.com/citations?user=7Gd17cQAAAAJ&hl">Google Scholar</a> &nbsp/&nbsp
-                    <a style="text-decoration:none" href="https://github.com/NikhilBehari/">Github</a>
+                    <a href="mailto:nikhilbehari@gmail.com">Email</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?user=7Gd17cQAAAAJ&hl">Google Scholar</a> &nbsp/&nbsp
+                    <a href="https://github.com/NikhilBehari/">Github</a>
                   </p>
                 </td>
-                <td class="image-cell" style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/prof.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/prof.jpg" class="hoverZoomLink"></a>
+                <td class="image-cell profile-cell">
+                  <a href="images/prof.jpg"><img class="profile-img hoverZoomLink" alt="profile photo" src="images/prof.jpg"></a>
                 </td>
               </tr>
             </tbody>
           </table>
 
           <!-- PUBLICATIONS TABLE -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="section-table">
             <tbody>
 
               <table>
 
 
-                <!-- Implicit LiDAR -->
+                <!-- DENALI -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/denali.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/denali.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://nikhilbehari.github.io">
                       <papertitle>DENALI: A Dataset Enabling Non-Line-of-Sight Spatial Reasoning with Low-Cost LiDARs</papertitle>
                     </a>
                     <br>
                     <strong>Nikhil Behari</strong>, Diego Rivero, Luke Apostolides, Suman Ghosh, Paul Pu Liang, Ramesh Raskar
                     <br>
-                    <em>CVPR</em>, June 2026
+                    <span class="highlight-wrapper">
+                      <em>CVPR</em>, June 2026
+                      <span class="highlight">Highlight</span>
+                    </span>
                     <br>
                     <!-- <a href="https://arxiv.org/abs/2505.22344">Under</a>  -->
                   </td>
@@ -122,33 +81,36 @@
 
                 <!-- Implicit LiDAR -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/implicit_lidar.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/implicit_lidar.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://nikhilbehari.github.io">
                       <papertitle>Task-Driven Implicit Representations for Automated Design of LiDAR Systems</papertitle>
                     </a>
                     <br>
                     <strong>Nikhil Behari</strong>, Aaron Young, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar
                     <br>
-                    <em>CVPR</em>, June 2026
+                    <span class="highlight-wrapper">
+                      <em>CVPR</em>, June 2026
+                      <span class="highlight">Highlight</span>
+                    </span>
                     <br>
-                    <a href="https://arxiv.org/abs/2505.22344">paper</a> 
+                    <a href="https://arxiv.org/abs/2505.22344">paper</a>
                   </td>
                 </tr>
 
 
                 <!-- Diffuse LiDAR Spatial Calib -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/difflidar_calib.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/difflidar_calib.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://arxiv.org/abs/2603.06531">
                       <papertitle>Spatial Calibration of Diffuse LiDAR</papertitle>
                     </a>
@@ -164,12 +126,12 @@
 
                 <!-- TedX Talk -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/tedxtalk.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/tedxtalk.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC">
                       <papertitle>The Hidden Information in Your Photos | TEDxMIT</papertitle>
                     </a>
@@ -178,45 +140,43 @@
                     <br>
                     <em>TEDxMIT Talk</em>, December 2025
                     <br>
-                    <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC">video link</a> 
+                    <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC">video link</a>
                   </td>
                 </tr>
-                
+
                 <!-- BLS3D -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/bls3d.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/bls3d.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://nikhilbehari.github.io/bls3d-web/">
                       <papertitle>Blurred LiDAR for Sharper 3D: Robust Handheld 3D Scanning with Diffuse LiDAR and RGB</papertitle>
                     </a>
                     <br>
                     <strong>Nikhil Behari</strong>, Aaron Young, Siddharth Somasundaram, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar
                     <br>
-                    <span style="display: inline-flex; align-items: center;">
+                    <span class="highlight-wrapper">
                       <em>CVPR</em>, June 2025
-                      <span style="background-color: #ffec99; color: #333; padding: 0px 6px; margin-left: 4px; border-radius: 4px;">
-                        Highlight
-                      </span>
+                      <span class="highlight">Highlight</span>
                     </span>
                     <br>
-                    <a href="https://nikhilbehari.github.io/bls3d-web/">project page</a> / 
-                    <a href="https://arxiv.org/abs/2411.19474">paper</a> / 
+                    <a href="https://nikhilbehari.github.io/bls3d-web/">project page</a> /
+                    <a href="https://arxiv.org/abs/2411.19474">paper</a> /
                     <a href="https://github.com/NikhilBehari/bls3d">code</a>
                   </td>
                 </tr>
-                
+
                 <!-- DLM -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/dlm.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/dlm.png' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://arxiv.org/abs/2402.14807">
                       <papertitle>A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health</papertitle>
                     </a>
@@ -225,8 +185,8 @@
                     <br>
                     <em>NeurIPS</em>, December 2024
                     <br>
-                    <a href="https://nikhilbehari.github.io/dlm-web/">project page</a> / 
-                    <a href="https://arxiv.org/pdf/2402.14807">paper</a> / 
+                    <a href="https://nikhilbehari.github.io/dlm-web/">project page</a> /
+                    <a href="https://arxiv.org/pdf/2402.14807">paper</a> /
                     <a href="https://github.com/yzhao3685/DLM">code</a>
                   </td>
                 </tr>
@@ -234,12 +194,12 @@
 
                 <!-- Gen Design -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/cambrian.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/cambrian.png' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://mit-genai.pubpub.org/pub/bcfcb6lu/release/2">
                       <papertitle>A Roadmap for Generative Design of Visual Intelligence</papertitle>
                     </a>
@@ -255,12 +215,12 @@
 
                 <!-- PreFermab -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/prefermab.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/prefermab.png' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://arxiv.org/pdf/2310.14526">
                       <papertitle>Towards a Pretrained Model for Restless Bandits via Multi-arm Generalization</papertitle>
                     </a>
@@ -269,19 +229,19 @@
                     <br>
                     <em>IJCAI</em>, August 2024
                     <br>
-                    <a href="https://arxiv.org/pdf/2310.14526">paper</a> / 
+                    <a href="https://arxiv.org/pdf/2310.14526">paper</a> /
                     <a href="https://github.com/yzhao3685/PreFeRMAB">code</a>
                   </td>
                 </tr>
 
                 <!-- SUNDIAL -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/sundial-sm.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/sundial-sm.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://drive.google.com/file/d/1ZV0vZu-QD2H8JBnTqdGlpN8BhlcX3iQb/view?usp=sharing">
                       <papertitle>SUNDIAL: 3D Satellite Understanding through Direct, Ambient, and Complex Lighting Decomposition</papertitle>
                     </a>
@@ -295,14 +255,14 @@
                   </td>
                 </tr>
 
-                <!-- DISeR: Designing Imaging Systems with Reinforcement Learning -->
+                <!-- DISeR -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/diser.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/diser.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://tzofi.github.io/diser/">
                       <papertitle>DISeR: Designing Imaging Systems with Reinforcement Learning</papertitle>
                     </a>
@@ -317,14 +277,14 @@
                 </tr>
 
 
-                <!-- ORCA: Glossy Objects as Radiance Field Cameras -->
+                <!-- ORCA -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/orca.gif' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/orca.gif' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://ktiwary2.github.io/objectsascam/">
                       <papertitle>ORCA: Glossy Objects as Radiance Field Cameras</papertitle>
                     </a>
@@ -340,20 +300,20 @@
                   </td>
                 </tr>
 
-                <!-- Data-driven Humanitarian Mapping and Policymaking: Toward Planetary-Scale Resilience, Equity, and Sustainability -->
+                <!-- Data-driven Humanitarian Mapping -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/humanitarian_mapping.jpg' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/humanitarian_mapping.jpg' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://kdd-humanitarian-mapping.herokuapp.com">
                       <papertitle>Data-driven Humanitarian Mapping and Policymaking: Toward Planetary-Scale Resilience,
                         Equity, and Sustainability</papertitle>
                     </a>
                     <br>
-                    Snehalkumar ‘Neil’ Gaikwad, Shankar Iyer, Dalton Lunga, Takahiro Yabe, Xiaofan Liang, Bhavani
+                    Snehalkumar 'Neil' Gaikwad, Shankar Iyer, Dalton Lunga, Takahiro Yabe, Xiaofan Liang, Bhavani
                     Ananthabhotla, <strong>Nikhil Behari</strong>, Sreelekha Guggilam, Guanghua Chi
                     <br>
                     <em>KDD</em>, August 2022
@@ -367,13 +327,12 @@
 
                 <!-- Senior Thesis -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/rapid_active.png' width="120" height="120"
-                        style="border-style: none; object-fit: contain;">
+                      <img src='images/rapid_active.png' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://dash.harvard.edu/handle/1/37371743">
                       <papertitle>A Framework for Rapid Active Learning in Resource-Constrained Environmental Sensing Domains
                       </papertitle>
@@ -387,15 +346,14 @@
                   </td>
                 </tr>
 
-                <!-- Micronutrient Deficiency Prediction via Publicly Available Satellite Imagery -->
+                <!-- Micronutrient Deficiency Prediction -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/micronutrient.jpg' width="120" height="120"
-                        style="border-style: none; object-fit: contain;">
+                      <img src='images/micronutrient.jpg' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12080">
                       <papertitle>Micronutrient Deficiency Prediction via Publicly Available Satellite Imagery
                       </papertitle>
@@ -412,12 +370,12 @@
 
                 <!-- Using Public Data to Predict Demand for Mobile Health Clinics -->
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/demand.jpg' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/demand.jpg' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21513/21262">
                       <papertitle>Using Public Data to Predict Demand for Mobile Health Clinics</papertitle>
                     </a>
@@ -432,14 +390,14 @@
                   </td>
                 </tr>
 
-                <!-- Contextual Segmentation of Fire Spotting Regions Through Satellite-Augmented Autonomous Modular Sensor Imagery -->
-                <tr bgcolor="">
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                <!-- Contextual Segmentation of Fire Spotting -->
+                <tr>
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/fire_spotting.png' width="120" height="120" style="border-style: none; object-fit: contain;">
+                      <img src='images/fire_spotting.png' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://ntrs.nasa.gov/api/citations/20210024365/downloads/behari_aiaa_paper_v2.pdf">
                       <papertitle>Contextual Segmentation of Fire Spotting Regions Through Satellite-Augmented
                         Autonomous Modular Sensor Imagery</papertitle>
@@ -457,13 +415,12 @@
 
                 <!-- Demand Prediction of Mobile Clinics Using Public Data
                 <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/mobile_clinic_prediction.png' width="120" height="120"
-                        style="border-style: none">
+                      <img src='images/mobile_clinic_prediction.png' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="">
                       <papertitle>Demand Prediction of Mobile Clinics Using Public Data</papertitle>
                     </a>
@@ -479,14 +436,14 @@
                 </tr> -->
 
 
-                <!-- Representative Travel Time Mapping: Highlighting Transportation-Based Citywide Inequities in Hospital Access ffffd0 -->
-                <tr bgcolor="">
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                <!-- Representative Travel Time Mapping -->
+                <tr>
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/travel_time_mapping.jpg' width="120" height="120" style="border-style: none">
+                      <img src='images/travel_time_mapping.jpg' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://drive.google.com/file/d/1XLEGijvuhr_94lTW4BIcNEPjg-as1svz/view?usp=share_link">
                       <papertitle>Representative Travel Time Mapping: Highlighting Transportation-Based Citywide
                         Inequities in Hospital Access</papertitle>
@@ -501,14 +458,14 @@
                   </td>
                 </tr>
 
-                <!-- Satellite-Based Food Market Detection for Micronutrient Deficiency Prediction -->
-                <tr bgcolor="">
-                  <td style="padding:10px;width:25%;vertical-align:middle">
+                <!-- Satellite-Based Food Market Detection -->
+                <tr>
+                  <td class="thumb-cell">
                     <div class="one">
-                      <img src='images/market_detection.jpg' width="120" height="120" style="border-style: none">
+                      <img src='images/market_detection.jpg' width="112" height="112" class="paper-img">
                     </div>
                   </td>
-                  <td style="padding:0px;width:75%;vertical-align:middle">
+                  <td class="detail-cell">
                     <a href="https://drive.google.com/file/d/1Usa7UG9uhR6pc-TIBHvVhf0uebakLApP/view?usp=share_link">
                       <papertitle>Satellite-Based Food Market Detection for Micronutrient Deficiency Prediction
                       </papertitle>
