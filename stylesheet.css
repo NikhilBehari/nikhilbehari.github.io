@@ -94,13 +94,30 @@ papertitle {
 }
 
 .highlight {
-  background-color: #ffec99;
-  color: #5c4b00;
-  padding: 1px 4px;
+  display: inline-flex;
+  align-items: stretch;
   margin-left: 6px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 300;
+  border: 1px solid rgba(140, 112, 30, 0.18);
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 10.5px;
+  line-height: 1.6;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.highlight .hl-label {
+  background-color: #fbe9a6;
+  color: #846413;
+  font-weight: 500;
+  padding: 0 5px;
+  border-right: 1px solid rgba(140, 112, 30, 0.18);
+}
+
+.highlight .hl-meta {
+  color: #9b8a64;
+  font-weight: 400;
+  padding: 0 6px;
 }
 
 /* ── Responsive ── */
