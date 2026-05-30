@@ -8,9 +8,8 @@
 
   <meta name="author" content="Nikhil Behari">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap' rel='stylesheet'>
+  <link rel="preload" href="fonts/open-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link href='stylesheet.css' rel='stylesheet'>
 
 </head>
@@ -19,13 +18,24 @@
   <table class="wrapper">
     <tbody>
       <tr>
-        <td style="padding:0">
+        <td class="page-cell">
           <!-- BIO TABLE -->
           <table class="section-table">
             <tbody>
               <tr>
                 <td class="bio-cell">
-                  <p style="text-align:left">
+                  <div class="mobile-header">
+                    <a class="mobile-avatar-link" href="images/prof.jpg"><img class="mobile-avatar" src="images/prof.jpg" alt="Nikhil Behari"></a>
+                    <div class="mobile-header-text">
+                      <name>Nikhil Behari</name>
+                      <p class="mobile-links">
+                        <a href="mailto:nikhilbehari@gmail.com">Email</a> &nbsp;/&nbsp;
+                        <a href="https://scholar.google.com/citations?user=7Gd17cQAAAAJ&hl">Google Scholar</a> &nbsp;/&nbsp;
+                        <a href="https://github.com/NikhilBehari/">Github</a>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="desktop-name">
                     <name>Nikhil Behari</name>
                   </p>
                   <p>
@@ -39,45 +49,79 @@
 
                   I am also a <a href="https://mather.harvard.edu/nrts">Non-Resident Tutor</a> for Harvard's Mather House, where I lead the Higher Education advising team.
                   </p>
-                  <p style="text-align:center">
+                  <p class="desktop-links">
                     <a href="mailto:nikhilbehari@gmail.com">Email</a> &nbsp;/&nbsp;
                     <a href="https://scholar.google.com/citations?user=7Gd17cQAAAAJ&hl">Google Scholar</a> &nbsp;/&nbsp;
                     <a href="https://github.com/NikhilBehari/">Github</a>
                   </p>
                 </td>
                 <td class="image-cell profile-cell">
-                  <a href="images/prof.jpg"><img class="profile-img hoverZoomLink" alt="profile photo" src="images/prof.jpg"></a>
+                  <a href="images/prof.jpg"><img class="profile-img" alt="profile photo" src="images/prof.jpg"></a>
                 </td>
               </tr>
             </tbody>
           </table>
 
+          <!-- TALKS & MEDIA -->
+          <div class="section-heading">Recent Talks &amp; Media</div>
+          <div class="media-strip">
+            <div class="media-item">
+              <a class="media-thumb-link" href="https://www.youtube.com/watch?v=P-4pbFcERnk" target="_blank" rel="noopener noreferrer">
+                <img src='images/veritasium.gif' class="media-thumb media-thumb-bright" alt="Veritasium video">
+              </a>
+              <div class="media-text">
+                <a href="https://www.youtube.com/watch?v=P-4pbFcERnk" target="_blank" rel="noopener noreferrer">
+                  <papertitle>What Happens If You Keep Slowing Down?</papertitle>
+                </a>
+                <br>
+                <em>Featured in Veritasium</em>, January 2026
+                <br>
+                <a href="https://www.youtube.com/watch?v=P-4pbFcERnk" target="_blank" rel="noopener noreferrer">video</a> /
+                <a href="https://www.media.mit.edu/articles/veritasium-what-if-you-keep-slowing-down/" target="_blank" rel="noopener noreferrer">mit feature</a>
+              </div>
+            </div>
+            <div class="media-item">
+              <a class="media-thumb-link" href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC" target="_blank" rel="noopener noreferrer">
+                <img src='images/tedxtalk.gif' class="media-thumb" alt="TEDxMIT talk">
+              </a>
+              <div class="media-text">
+                <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC" target="_blank" rel="noopener noreferrer">
+                  <papertitle>The Hidden Information in Your Photos</papertitle>
+                </a>
+                <br>
+                <em>TEDxMIT Talk</em>, December 2025
+                <br>
+                <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC" target="_blank" rel="noopener noreferrer">video</a>
+              </div>
+            </div>
+          </div>
+
           <!-- PUBLICATIONS TABLE -->
+          <div class="section-heading section-heading-spaced">Publications</div>
           <table class="section-table">
             <tbody>
 
                 <!-- DENALI -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/denali.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/denali.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
-                    <a href="https://nikhilbehari.github.io/denali/">
-                      <papertitle>DENALI: A Dataset Enabling Non-Line-of-Sight Spatial Reasoning with Low-Cost LiDARs</papertitle>
-                    </a>
-                    <br>
-                    <strong>Nikhil Behari</strong>, Diego Rivero, Luke Apostolides, Suman Ghosh, Paul Pu Liang, Ramesh Raskar
-                    <br>
-                    <span class="highlight-wrapper">
-                      <em>CVPR</em>, June 2026
-                      <span class="highlight">
-                        <span class="hl-label">Highlight</span>
-                        <span class="hl-meta">Top 14% of accepted papers</span>
+                    <div class="hl-zone">
+                      <a href="https://nikhilbehari.github.io/denali/">
+                        <papertitle>DENALI: A Dataset Enabling Non-Line-of-Sight Spatial Reasoning with Low-Cost LiDARs</papertitle>
+                      </a>
+                      <br>
+                      <strong>Nikhil Behari</strong>, Diego Rivero, Luke Apostolides, Suman Ghosh, Paul Pu Liang, Ramesh Raskar
+                      <br>
+                      <span class="highlight-wrapper">
+                        <em>CVPR</em>, June 2026
+                        <span class="highlight">
+                          <span class="hl-label">Highlight</span>
+                          <span class="hl-meta">Top 14% of accepted papers</span>
+                        </span>
                       </span>
-                    </span>
-                    <br>
+                    </div>
                     <a href="https://nikhilbehari.github.io/denali/">project page</a> /
                     <a href="https://arxiv.org/abs/2604.16201">paper</a> /
                     <a href="https://github.com/NikhilBehari/denali">code</a> /
@@ -88,25 +132,24 @@
                 <!-- Implicit LiDAR -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/implicit_lidar.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/implicit_lidar.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
-                    <a href="https://nikhilbehari.github.io/implicitlidar/">
-                      <papertitle>Task-Driven Implicit Representations for Automated Design of LiDAR Systems</papertitle>
-                    </a>
-                    <br>
-                    <strong>Nikhil Behari</strong>, Aaron Young, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar
-                    <br>
-                    <span class="highlight-wrapper">
-                      <em>CVPR</em>, June 2026
-                      <span class="highlight">
-                        <span class="hl-label">Highlight</span>
-                        <span class="hl-meta">Top 14% of accepted papers</span>
+                    <div class="hl-zone">
+                      <a href="https://nikhilbehari.github.io/implicitlidar/">
+                        <papertitle>Task-Driven Implicit Representations for Automated Design of LiDAR Systems</papertitle>
+                      </a>
+                      <br>
+                      <strong>Nikhil Behari</strong>, Aaron Young, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar
+                      <br>
+                      <span class="highlight-wrapper">
+                        <em>CVPR</em>, June 2026
+                        <span class="highlight">
+                          <span class="hl-label">Highlight</span>
+                          <span class="hl-meta">Top 14% of accepted papers</span>
+                        </span>
                       </span>
-                    </span>
-                    <br>
+                    </div>
                     <a href="https://nikhilbehari.github.io/implicitlidar/">project page</a> /
                     <a href="https://arxiv.org/abs/2505.22344">paper</a> /
                     <a href="https://github.com/NikhilBehari/implicitlidar">code</a>
@@ -117,9 +160,7 @@
                 <!-- Diffuse LiDAR Spatial Calib -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/difflidar_calib.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/difflidar_calib.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://nikhilbehari.com/diffuselidar_calibrate/">
@@ -136,48 +177,27 @@
                   </td>
                 </tr>
 
-                <!-- TedX Talk -->
-                <tr>
-                  <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/tedxtalk.gif' width="112" height="112" class="paper-img">
-                    </div>
-                  </td>
-                  <td class="detail-cell">
-                    <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC">
-                      <papertitle>The Hidden Information in Your Photos | TEDxMIT</papertitle>
-                    </a>
-                    <br>
-                    <strong>Nikhil Behari</strong>
-                    <br>
-                    <em>TEDxMIT Talk</em>, December 2025
-                    <br>
-                    <a href="https://youtu.be/Acg1R2tbluc?si=wfZUiTG_GPBAVgPC">video link</a>
-                  </td>
-                </tr>
-
                 <!-- BLS3D -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/bls3d.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/bls3d.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
-                    <a href="https://nikhilbehari.github.io/bls3d-web/">
-                      <papertitle>Blurred LiDAR for Sharper 3D: Robust Handheld 3D Scanning with Diffuse LiDAR and RGB</papertitle>
-                    </a>
-                    <br>
-                    <strong>Nikhil Behari</strong>, Aaron Young, Siddharth Somasundaram, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar
-                    <br>
-                    <span class="highlight-wrapper">
-                      <em>CVPR</em>, June 2025
-                      <span class="highlight">
-                        <span class="hl-label">Highlight</span>
-                        <span class="hl-meta">Top 13% of accepted papers</span>
+                    <div class="hl-zone">
+                      <a href="https://nikhilbehari.github.io/bls3d-web/">
+                        <papertitle>Blurred LiDAR for Sharper 3D: Robust Handheld 3D Scanning with Diffuse LiDAR and RGB</papertitle>
+                      </a>
+                      <br>
+                      <strong>Nikhil Behari</strong>, Aaron Young, Siddharth Somasundaram, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar
+                      <br>
+                      <span class="highlight-wrapper">
+                        <em>CVPR</em>, June 2025
+                        <span class="highlight">
+                          <span class="hl-label">Highlight</span>
+                          <span class="hl-meta">Top 13% of accepted papers</span>
+                        </span>
                       </span>
-                    </span>
-                    <br>
+                    </div>
                     <a href="https://nikhilbehari.github.io/bls3d-web/">project page</a> /
                     <a href="https://arxiv.org/abs/2411.19474">paper</a> /
                     <a href="https://github.com/NikhilBehari/bls3d">code</a>
@@ -187,9 +207,7 @@
                 <!-- DLM -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/dlm.png' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/dlm.png' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://nikhilbehari.com/dlm/">
@@ -210,9 +228,7 @@
                 <!-- Gen Design -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/cambrian.png' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/cambrian.png' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://mit-genai.pubpub.org/pub/bcfcb6lu/release/3">
@@ -231,9 +247,7 @@
                 <!-- PreFermab -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/prefermab.png' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/prefermab.png' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://arxiv.org/abs/2310.14526">
@@ -252,9 +266,7 @@
                 <!-- SUNDIAL -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/sundial-sm.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/sundial-sm.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://arxiv.org/abs/2312.16215">
@@ -272,9 +284,7 @@
                 <!-- DISeR -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/diser.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/diser.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://tzofi.github.io/diser/">
@@ -295,9 +305,7 @@
                 <!-- ORCA -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/orca.gif' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/orca.gif' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://ktiwary2.github.io/objectsascam/">
@@ -319,9 +327,7 @@
                 <!-- Data-driven Humanitarian Mapping -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/humanitarian_mapping.jpg' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/humanitarian_mapping.jpg' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://kdd-humanitarian-mapping.herokuapp.com">
@@ -344,9 +350,7 @@
                 <!-- Senior Thesis -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/rapid_active.png' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/rapid_active.png' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://dash.harvard.edu/handle/1/37371743">
@@ -365,9 +369,7 @@
                 <!-- Micronutrient Deficiency Prediction -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/micronutrient.jpg' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/micronutrient.jpg' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://onlinelibrary.wiley.com/doi/10.1002/aaai.12080">
@@ -386,9 +388,7 @@
                 <!-- Using Public Data to Predict Demand for Mobile Health Clinics -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/demand.jpg' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/demand.jpg' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21513/21262">
@@ -407,9 +407,7 @@
                 <!-- Contextual Segmentation of Fire Spotting -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/fire_spotting.png' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/fire_spotting.png' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://ntrs.nasa.gov/citations/20210024365">
@@ -425,36 +423,10 @@
                   </td>
                 </tr>
 
-
-                <!-- Demand Prediction of Mobile Clinics Using Public Data
-                <tr>
-                  <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/mobile_clinic_prediction.png' width="112" height="112" class="paper-img">
-                    </div>
-                  </td>
-                  <td class="detail-cell">
-                    <a href="">
-                      <papertitle>Demand Prediction of Mobile Clinics Using Public Data</papertitle>
-                    </a>
-                    <br>
-                    Haipeng Chen, Susobhan Ghosh, Gregory Fan, <strong>Nikhil Behari</strong>, Arpita Biswas, Mollie Williams, Nancy E.
-                    Oriol, Milind Tambe
-                    <br>
-                    <em>NeurIPS Machine Learning in Public Health (MLPH)</em>, December 2021
-                    <br>
-                    <a href="">project page</a> /
-                    <a href="">paper</a>
-                  </td>
-                </tr> -->
-
-
                 <!-- Representative Travel Time Mapping -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/travel_time_mapping.jpg' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/travel_time_mapping.jpg' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://drive.google.com/file/d/1XLEGijvuhr_94lTW4BIcNEPjg-as1svz/view?usp=share_link">
@@ -474,9 +446,7 @@
                 <!-- Satellite-Based Food Market Detection -->
                 <tr>
                   <td class="thumb-cell">
-                    <div class="one">
-                      <img src='images/market_detection.jpg' width="112" height="112" class="paper-img">
-                    </div>
+                    <img src='images/market_detection.jpg' width="112" height="112" class="paper-img">
                   </td>
                   <td class="detail-cell">
                     <a href="https://drive.google.com/file/d/1GALgpCSmhxyG-HiIGV4oZlM9oBWfoVLH/view">
@@ -496,7 +466,6 @@
 
             </tbody>
           </table>
-
 
         </td>
       </tr>
