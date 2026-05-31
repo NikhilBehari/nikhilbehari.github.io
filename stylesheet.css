@@ -80,6 +80,12 @@ papertitle {
   vertical-align: middle;
 }
 
+/* Links in the intro paragraphs (the classless <p>s) at the title weight;
+   the contact links (.desktop-links / .mobile-links) stay at 300 */
+.bio-cell p:not([class]) a {
+  font-weight: 400;
+}
+
 .profile-cell {
   padding: 2.5% 2.5% 2.5% 4%;
   width: 42%;
