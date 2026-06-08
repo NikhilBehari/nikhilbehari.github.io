@@ -197,7 +197,6 @@ papertitle {
   align-items: center;
 }
 
-.label-short { display: none; }
 
 .highlight {
   display: inline-flex;
@@ -312,9 +311,6 @@ papertitle {
   .mobile-links {
     margin: 7px 0 0;
   }
-
-  .label-full  { display: none; }
-  .label-short { display: inline; }
 
   .highlight .hl-meta {
     display: none;
