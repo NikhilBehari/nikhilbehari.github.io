@@ -237,9 +237,9 @@ papertitle {
   cursor: default;
 }
 
-/* Reveal on hover over that zone — only on devices that truly hover (not touch) */
+/* Reveal on hover over the pill itself — only on devices that truly hover (not touch) */
 @media (hover: hover) {
-  .hl-zone:hover .hl-meta {
+  .highlight:hover .hl-meta {
     max-width: 40ch;
     padding: 0 6px;
     border-left-width: 1px;
@@ -251,6 +251,21 @@ papertitle {
   .highlight .hl-meta {
     transition: none;
   }
+}
+
+/* Compute Transparency Award — light cool gray */
+.highlight-award {
+  border-color: rgba(100, 120, 140, 0.15);
+}
+
+.highlight-award .hl-label {
+  background-color: #eef1f5;
+  color: #7088a0;
+}
+
+.highlight-award .hl-meta {
+  border-left-color: rgba(100, 120, 140, 0.15);
+  color: #8fa3b5;
 }
 
 /* ── Responsive: mobile (≤ 660px) ── */
